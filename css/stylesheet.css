@@ -7,10 +7,42 @@
 }
 
 body {
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   color: var(--paragraphColor);
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
+
 h1,
 h2,
 h3 {
   color: var(--headingsColor);
+  margin-bottom: 0.8rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  margin-top: 0;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
