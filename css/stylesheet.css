@@ -1,0 +1,16 @@
+:root {
+  --primaryColor: #2584ff;
+  --secondaryColor: #00d9ff;
+  --accentColor: #ff3400;
+  --headingsColor: #1b0760;
+  --paragraphColor: #918ca4;
+}
+
+body {
+  color: var(--paragraphColor);
+}
+h1,
+h2,
+h3 {
+  color: var(--headingsColor);
+}
