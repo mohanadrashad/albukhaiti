@@ -48,7 +48,7 @@ p {
   }
 }
 
-/* Links */
+/* Links */ /* Links */
 a {
   text-decoration: none;
 }
@@ -71,5 +71,34 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1rem;
+  }
+}
+
+/* badges */ /* badges */
+.badge {
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.badge--secondary {
+  background-color: var(--secondaryColor);
+  color: #fff;
+}
+.badge--small {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1rem;
+  }
+  .badge--small {
+    font-size: 0.75rem;
   }
 }
