@@ -307,8 +307,6 @@ a {
 .plan--popular .button {
   background: var(--headingsColor);
 }
-.plan--secondary {
-}
 
 @media screen and (min-width: 1024px) {
   .plan__name {
