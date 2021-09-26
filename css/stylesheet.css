@@ -304,8 +304,20 @@ a {
   font-weight: 300;
 }
 
-.plan--popular .button {
+.plan .button {
   background: var(--headingsColor);
+}
+
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::after {
+  content: url(../images/popular.svg);
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: 5%;
 }
 
 @media screen and (min-width: 1024px) {
