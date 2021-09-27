@@ -335,3 +335,17 @@ a {
     font-size: 1rem;
   }
 }
+
+/* media */ /* media */
+.media {
+  display: flex;
+}
+.media__title {
+  margin: 0;
+}
+.media__body {
+  margin: 0 1.25rem;
+}
+.media__image {
+  margin-top: 0.9rem;
+}
