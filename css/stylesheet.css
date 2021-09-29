@@ -18,7 +18,7 @@
 body {
   font-family: Inter, Arial, Arial, Helvetica, sans-serif;
   color: var(--paragraphColor);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 
@@ -177,6 +177,10 @@ a {
   cursor: pointer;
   font-weight: 600;
   padding: 1.25rem 1.8rem;
+}
+
+.button--larger {
+  padding: 1.25rem 3.75rem;
 }
 
 .button--primary {
@@ -451,5 +455,38 @@ a {
   .testimonial .quote {
     margin-left: 3.75rem;
     line-height: 2rem;
+  }
+}
+
+/* callouts */
+.callout {
+  text-align: center;
+  padding: 2.5rem;
+}
+.callout--primary {
+  background: var(--primaryColor);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.callout .button {
+  justify-self: center;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .callout {
+    text-align: left;
+  }
+  .callout .button {
+    justify-self: start;
+    margin: 0 1.5rem;
+  }
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
   }
 }
