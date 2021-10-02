@@ -27,10 +27,11 @@ h2,
 h3 {
   color: var(--headingsColor);
   margin-bottom: 0.8rem;
+  line-height: 1.1;
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.75rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -567,7 +568,10 @@ a {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
 }
-
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /* navigation bar */
 
 .logo {
@@ -647,5 +651,28 @@ a {
   }
   .nav__item {
     border-bottom: none;
+  }
+}
+
+/* Heros */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+}
+.hero__p {
+  font-size: 1.25rem;
+  color: #b9c3cf;
+  margin: 1.25rem 0 3rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: start;
+    align-self: center;
+  }
+  .hero {
+    padding-top: 0;
   }
 }
