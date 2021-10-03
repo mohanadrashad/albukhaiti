@@ -179,6 +179,7 @@ a {
   cursor: pointer;
   font-weight: 600;
   padding: 1.25rem 1.8rem;
+  white-space: nowrap;
 }
 
 .button .icon {
@@ -266,7 +267,6 @@ a {
 
 .input-group .button {
   margin: 4px;
-  padding: 1.25rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -279,9 +279,10 @@ a {
 
 .card {
   border-radius: 7px;
-  box-shadow: 0 0 20px 16px #f3f3f3;
-  margin: 20px auto;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  margin: 0 auto;
   overflow: hidden;
+
 }
 
 .card__header,
@@ -327,20 +328,27 @@ a {
   font-weight: 300;
 }
 
-.plan .button {
-  background: var(--headingsColor);
+.plan--popular{
+  transform: scale(1.1);
 }
+
 
 .plan--popular .card__header {
   position: relative;
 }
-.plan--popular .card__header::after {
-  content: url(../images/popular.svg);
+.plan--popular .card__header::before {
+  content: url(../images/popular.a6fe98f3.svg);
   width: 40px;
   display: inline-block;
   position: absolute;
-  top: -5px;
+  top: -6px;
   right: 5%;
+}
+.plan:hover{
+  transform: scale(1.05);
+}
+.plan--popular:hover{
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -708,4 +716,18 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
     font-size: 1.25rem;
   }
+}
+
+
+/* plan block */
+.plan {
+  transition: transform 0.3s ease-out;
+}
+.block-plan .grid {
+  gap: 5rem 2.5rem;
+}
+
+.block-plan .card{
+  max-width: 500px;
+  margin: 0 auto;
 }
