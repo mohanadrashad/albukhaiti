@@ -37,7 +37,7 @@ h2 {
   font-size: 2.5rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 p {
   margin-top: 0;
@@ -282,7 +282,6 @@ a {
   box-shadow: 0 0 20px 10px #f3f3f3;
   margin: 0 auto;
   overflow: hidden;
-
 }
 
 .card__header,
@@ -328,10 +327,9 @@ a {
   font-weight: 300;
 }
 
-.plan--popular{
+.plan--popular {
   transform: scale(1.1);
 }
-
 
 .plan--popular .card__header {
   position: relative;
@@ -344,10 +342,10 @@ a {
   top: -6px;
   right: 5%;
 }
-.plan:hover{
+.plan:hover {
   transform: scale(1.05);
 }
-.plan--popular:hover{
+.plan--popular:hover {
   transform: scale(1.15);
 }
 
@@ -370,15 +368,16 @@ a {
 /* media */ /* media */
 .media {
   display: flex;
+  margin-bottom: 2.5rem;
 }
 .media__title {
-  margin: 0;
+  margin-top: 0;
 }
 .media__body {
   margin: 0 1.25rem;
 }
 .media__image {
-  margin-top: 0.9rem;
+  margin-top: 0.6rem;
 }
 
 /* quote */ /* quote */
@@ -718,7 +717,6 @@ a {
   }
 }
 
-
 /* plan block */
 .plan {
   transition: transform 0.3s ease-out;
@@ -727,7 +725,28 @@ a {
   gap: 5rem 2.5rem;
 }
 
-.block-plan .card{
+.block-plan .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* feature block  */
+.feature {
+  gap: 2.5rem 1.25rem;
+}
+.feature:first-of-type {
+  margin-top: 3.75rem;
+}
+.feature__heading {
+  margin: 0.6rem 0;
+  font-weight: 600;
+}
+.feature__content,
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .block:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
