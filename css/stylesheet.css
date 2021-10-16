@@ -800,12 +800,12 @@ a {
 .footer__section .list {
   margin: 0;
 }
-.footer__section li {
+.footer__section a {
   color: #777;
   transition: color 0.3s;
   text-transform: capitalize;
 }
-.footer__section li:hover {
+.footer__section a:hover {
   color: #fff;
 }
 .footer__brand {
