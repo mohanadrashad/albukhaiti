@@ -183,7 +183,7 @@ a {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  padding: 1.25rem 1.8rem;
+  padding: 1.25rem 4vw;
   white-space: nowrap;
 }
 
@@ -268,6 +268,7 @@ a {
   border: none;
   flex-grow: 1;
   padding: 1.25rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -332,10 +333,6 @@ a {
   font-weight: 300;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
@@ -357,6 +354,10 @@ a {
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 0.9rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
   }
 
   .plan__price {
@@ -522,7 +523,6 @@ a {
 /* collapsible  */
 .collapsible {
   background: #232323;
-  border-bottom: 1px solid #393939;
 }
 .collapsible__header {
   display: flex;
@@ -573,6 +573,7 @@ a {
 .block {
   --padding-vertical: 3.75rem;
   padding: var(--padding-vertical) 1.25rem;
+  overflow-x: hidden;
 }
 .block--dark {
   background: #000;
@@ -586,7 +587,7 @@ a {
 }
 .block__header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 .block__heading {
   margin-top: 0;
@@ -596,12 +597,12 @@ a {
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 .container {
   max-width: 1140px;
@@ -722,12 +723,13 @@ a {
 
 .block--domain .list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 3.75rem);
   justify-items: center;
-  font-weight: bold;
+  font-weight: 600;
   max-width: 700px;
   margin: auto;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -754,9 +756,7 @@ a {
 .feature {
   gap: 2.5rem 1.25rem;
 }
-.feature:first-of-type {
-  margin-top: 3.75rem;
-}
+
 .feature__heading {
   margin: 0.6rem 0;
   font-weight: 600;
@@ -766,7 +766,7 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .block:nth-of-type(even) .feature__content {
+  .block:nth-of-type(odd) .feature__content {
     order: 2;
   }
 }
@@ -786,8 +786,7 @@ a {
   }
 
   .block-showcase__image > img {
-    width: auto;
-    max-width: 700px;
+    width: 700px;
   }
 }
 
